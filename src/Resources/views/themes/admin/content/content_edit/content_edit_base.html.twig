@@ -1,0 +1,6 @@
+{% extends 'EzPlatformAdminUiBundle:content/content_edit:content_edit_base.html.twig' %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('bundles/coderhapsodieezautosave/js/autosave.js') }}"></script>
+{% endblock %}

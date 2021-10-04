@@ -1,0 +1,35 @@
+{
+    "name": "code-rhapsodie/ezautosave-bundle",
+    "description": "Autosave bundle for eZPlatform",
+    "type": "symfony-bundle",
+    "keywords": [
+        "autosave",
+        "ezplatform",
+        "ibexa"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Code Rhapsodie",
+            "homepage": "https://www.code-rhapsodie.fr/"
+        },
+        {
+            "name": "Jérémy J.",
+            "email": "jeremy@code-rhapsodie.fr",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CodeRhapsodie\\EzAutosaveBundle\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.2",
+        "ezsystems/ezplatform-admin-ui": "^1.0",
+        "ezsystems/ezpublish-kernel": "^7.0"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
