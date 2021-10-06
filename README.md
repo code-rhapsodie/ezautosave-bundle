@@ -24,10 +24,8 @@ $ composer require code-rhapsodie/ezautosave-bundle
 
 ### Register the bundle
 
-#### Symfony 4+ (new tree)
-
-For Symfony 4+, add `CodeRhapsodie\EzAutosaveBundle\CodeRhapsodieEzAutosaveBundle::class => ['all' => true],
-` in the `config/bundles.php` file.
+Add `CodeRhapsodie\EzAutosaveBundle\CodeRhapsodieEzAutosaveBundle::class => ['all' => true],
+` in the `config/bundles.php` file, just before the `EzPlatformAdminUiBundle` line.
 
 Like this:
 
@@ -37,29 +35,11 @@ Like this:
 return [
      // ...
     CodeRhapsodie\EzAutosaveBundle\CodeRhapsodieEzAutosaveBundle::class => ['all' => true],
+    EzSystems\EzPlatformAdminUiBundle\EzPlatformAdminUiBundle::class => ['all' => true],
     // ...
 ];
 ```
 
-#### Symfony 3.4 (old tree)
-
-For Symfony 3.4, add a new line in the `app/AppKernel.php` file.
-
-Like this:
-
-```php
-<?php
-// app/AppKernel.php
-
-public function registerBundles()
-{
-    $bundles = [
-        // ...
-        new CodeRhapsodie\EzAutosaveBundle\CodeRhapsodieEzAutosaveBundle(),
-        // ...
-    ];
-}
-```
 
 # Issues and feature requests
 
